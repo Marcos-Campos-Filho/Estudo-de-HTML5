@@ -5,7 +5,7 @@
 
   <h2>Meios de Estudo:</h2>
     <ul>
-    <li>w3schools</li>
-    <li>MDN Web Docs</li>
-    <li>roadmap.sh</li>
+    <li><a href="https://www.w3schools.com/html/default.asp">W3schools</a></li>
+    <li><a href="https://developer.mozilla.org/pt-BR/">MDN Web Docs</a></li>
+    <li><a href="https://roadmap.sh/frontend">roadmap.sh</a></li>
     </ul>
