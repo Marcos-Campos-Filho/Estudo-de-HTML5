@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isso é o Titulo</title>
 </head>
-
 <body>
     <!--<tag inicio> Conteudo(ELEMENTO) </tag fechamento>-->
     <h1>Isso é a parte do corpo da Página</h1>
@@ -20,10 +19,14 @@
     <p>Isso é um paragrafo</p>
     <!--Utilizado para especificar a lingaguem desse paragrafo
     (recomendado para acessibilidade)-->
-    <p lang="en">This is a paragraph</p>
+    <p lang="en">This is a <strong title="tradução: paragrafo">paragraph</strong></p>
+    <img title="preto" src="black.png" alt="quadrado de cor preto"> <!--O alt="" da uma descrição a imagem(recomendavel para acessibilidade)-->
+    <br>
     <!--Com o targe="_blank" o link vai ser aberto em outra aba-->
-    
-    <a href="https://youtu.be/5qap5aO4i9A" target="_blank" >Bons Estudos!</a>
+    <a href="https://youtu.be/5qap5aO4i9A" target="_blank" rel="noneferrer">Bons Estudos!</a>
+    <!--Com a mudança de aba, muda se o caminha a chegar no local desejado(muda se o referrer), então não criando um referenciador e
+    não abrindo um deixa a possibilidade do, por exemplo um dado importante seja intercepita, ja que, ele
+    vai diretamente ao local final.(utilizando o rel="noneferrer" e rel="noopener" , em navegadores atuais o rel="noopener" já vem
+    inbutido dentro do  target="_blank" menos o IE que não possui suporte )-->
 </body>
-
 </html>
