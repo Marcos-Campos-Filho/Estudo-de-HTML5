@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="icon" href="tabela.png" type="image/x-icon">
+    <style>
+        body {
+            /*border: 1px solid red; */
+        }
+        table {
+            border:1px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        tr th {
+            border: 0.1rem outset;
+        }
+        tr:nth-child(even) /*td:nth-child(even)*/ { /*Selecionar somente as linhas pares.*/
+            background-color : rgba(50,50,50,0.2);
+        }
+        td {
+            border: 0.1rem outset;
+            padding: 0.5rem;
+        }
+        td#tt {
+            text-align: center;
+        }
+        tr#dia {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+        
+    <table style="width: 80%;">
+        <caption style="font-size:2rem;"><strong>Tabela</strong></caption>
+        <caption style="caption-side:bottom; ">
+            <a href="source.jpg">Source</a>
+        </caption>
+      <tr style="height: 2rem;">
+        <th >Nome</th>
+        <th>Profissão</th>
+        <th style="width:28%;">Tempo de Trabalho</th>
+      </tr>
+          <td>Marcos</td>
+          <td>Desenvolver Web</td>
+          <td id="tt">01 ano</td>
+          <tr>
+              <td>Mary</td>
+              <td>Engenheira</td>
+              <td id="tt">02 anos</td>
+           <tr>
+               <td>Carlos</td>
+               <td>Professor</td>
+               <td id="tt">04 anos</td>
+           </tr>
+           <tr>
+               <td>Bary</td>
+               <td>Programador</td>
+               <td id="tt">06 anos</td>
+             <tr>
+                 <td>Todd</td>
+                 <td>Tradutor</td>
+                 <td id="tt">4.5 anos</td>
+             </tr>  
+           </tr>   
+          </tr>
+    </table>
+    <hr>
+    <table style="width:80%;">
+        <caption style="font-size:2rem;"><strong>Tabela com o Elemento colgroup </strong></caption>
+        <colgroup>
+            <col span="2" style="background-color:brown">
+            <col span="3"><!--Para retirar colunas visibility:colapase-->
+            <col span="2" style="border:2px solid blue">
+        </colgroup>
+        <tr>
+            <th>Domingo</th>
+            <th>Segunda</th>
+            <th>Terça</th>
+            <th>Quarta</th>
+            <th>Quinta</th>
+            <th>Sexta</th>
+            <th>Sábado</th>
+        </tr>
+           <tr id="dia">
+               <td>1</td>
+               <td>2</td>
+               <td>3</td>
+               <td>4</td>
+               <td>5</td>
+               <td>6</td>
+               <td>7</td>
+           </tr>
+           <tr id="dia">
+               <td>8</td>
+               <td>7</td>
+               <td>10</td>
+               <td>11</td>
+               <td>12</td>
+               <td>13</td>
+               <td>14</td>
+            <tr></tr>
+           </tr>
+    </table>
+</body>
+</html>
