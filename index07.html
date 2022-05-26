@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <style>
+        dt::after {
+            content: ':';
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista com pontos</h1>
+    <ul style="list-style-type:'\1F44D';"> <!--Subsituir os simbolos por outras imagens-->
+        <li>Acordar</li>
+        <li>Ver Celular</li>
+            <ul style="list-style-type:'\1F44D';">
+                <li>Twitter,Youtube</li>
+            </ul>
+        <li>Levantar</li>
+    </ul>
+    <hr>
+    <h1>Lista Organizada</h1>
+    <ol <!--style="list-style-type:' § ';"-- > <!--Substituir por Strings da sua escolha-->
+        <li>Acordar</li>
+        <li>Ver Celular</li>
+        <li>Levantar</li>
+    </ol>
+    <hr>
+    <h1>Lista em Forma de Menu</h1>
+    <menu style="display:flex; list-style:none;">
+        <li><button>Colar</button></li>
+        <li><button>Copiar</button></li>
+        <li><button>Cortar</button></li>
+    </menu>
+    <hr>
+     <h1>Lista en forma de Descrição</h1>
+    <dl>
+       <dt><b>Café</b></dt>
+       <dd> - Tomar pela manhã</dd>
+       <dt><b>Banho</b></dt>
+       <dd> - Antes ou Depois do Café</dd> 
+    </dl>
+    <hr>
+    <h1>Lista en forma de Descrição METADATA</h1>
+    <dl>
+        <dt>Name</dt>
+        <dd>Godzilla</dd>
+        <dt>Born</dt>
+        <dd>1952</dd>
+        <dt>Birthplace</dt>
+        <dd>Japan</dd>
+        <dt>Color</dt>
+        <dd>Green</dd>
+      </dl>
+</body>
+</html>
