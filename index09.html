@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Teste</title>
+</head>
+<body>
+    <h1>Teste Javascript</h1>
+    <button type="button" onclick="clicar()">Clique!</button>
+    <p id="teste">Mude esse Texto.</p>
+    <ins id="data">Data de Hoje.</ins><br>
+    <hr>
+
+    <img id="imagem" src="black.png" alt="preto"> <br>
+
+    <button type="button" onclick="luz(0)">PRETO</button>
+    <button type="button" onclick="luz(1)">CINZA</button>
+
+    <script>
+        function clicar() {
+            document.getElementById('teste').innerHTML='<strong>Mudei!</strong>'
+            document.getElementById('data').innerHTML= Date()
+        }
+
+        function luz(sw) {
+            var pic;   //Implementa uma variavel vazia
+            if (sw == 0) {    //Se o paramentro sw for 0-que seria o preto-
+                pic = "black.png" //Essa imagem vai ser atribuida a variavel pic
+            } else {    //Senao, ou seja, se o valor do sw for 1-que é o cinza-
+                pic = "cinza.png"   //Essa imagem que será atribuida
+            }
+            document.getElementById('imagem').src = pic;  //Ai substitui a imagem na 
+            //tela pela cor que esta dentro da variável pic.
+        }
+    </script>
+</body>
+</html>

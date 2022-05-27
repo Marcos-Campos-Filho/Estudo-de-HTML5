@@ -10,30 +10,48 @@
         h1{margin:auto 10rem auto 10rem;}
          p , pre {text-align: center;}
          body {background-color: rgba(50, 50, 50, 0.1);}
+        @media only screen and (max-width:668px) {
+            h1 {
+                font-size: large;
+            }
+            span{
+                font-size: 0.8rem;
+            }
+        }
+        @media only screen and (max-width:532px) {
+            h1 {
+                font-size: medium;
+            }
+        }
+        @media only screen and (max-width:510px) {
+            h1 {
+                font-size: small;
+            }
+        }
     </style>
 </head>
 <body>
     <p ><a style="text-decoration:none; float: left;" href="#hsla">Pular para HSLA</a></p><!--O href="" irá fazer com que o que o link diz-->
     <!--Bookmarking para outra página seria nesse estilo <a href="Cores.html#hsla">Pular para HSLA</a>-->
     <h1 style="text-align:center; background-color:rgb(280, 251, 35);">UMA COR em RGB rgb(280, 251, 35)</h1>
-    <p><strong>RGB representa os valores e a sua quantidade de RED(VERMELHO),GREEN(VERDE),BLUE(AZUL)</strong></p>
+    <p><span>RGB representa os valores e a sua quantidade de RED(VERMELHO),GREEN(VERDE),BLUE(AZUL)</span></p>
     <p><ins><b>rgb</b>(valor de vermelho,valor de verde,valor de azul).
         indo de 0 a 255.</ins>
     </p>
     <hr>
-    <h1 style="text-align:center; background-color:rgba(280, 251,35,0.7);">MESMA COR em RGBA rgba(280, 251,35,0.7)</h1>
-    <p><strong>RGBA representa os mesmos valores acrescentando o Alpha Channer(Opacidade)</strong></p>
+    <h1  style="text-align:center; background-color:rgba(280, 251,35,0.7);">MESMA COR em RGBA rgba(280, 251,35,0.7)</h1>
+    <p><span>RGBA representa os mesmos valores acrescentando o Alpha Channer(Opacidade)</span></p>
     <p><ins><b>rgba</b>(valor de vermelho,valor de verde,valor de azul, valor da opacidade'alpha').
         indo de 0 a 255 e a opacidade indo de 0.0 a 1.0 .</ins>
     </p>
     <hr>
     <h1 style="text-align:center; background-color:#f093c9">UMA COR em HEX #f093c9</h1>
-    <p><strong>RGB representa os valores e a sua quantidade de RED(VERMELHO),GREEN(VERDE),BLUE(AZUL)</strong></p>
+    <p><span>RGB representa os valores e a sua quantidade de RED(VERMELHO),GREEN(VERDE),BLUE(AZUL)</spa></p>
     <p><ins> <b>#rrggbb</b> rr(vermelho), gg(verde), bb(azul) ; indo de 00 a ff. </ins>
     </p>
     <hr>
-    <h1 style="text-align:center; background-color:hsl(150,40%,45%)">UMA COR em HSL hsl(150,40%,45%)</h1>
-    <p><strong>HSL representa a HUE(MATIZ),SATURATION(SATURAÇÃO),LIGHTNESS(BRILHO)</strong></p>
+    <h1  style="text-align:center; background-color:hsl(150,40%,45%)">UMA COR em HSL hsl(150,40%,45%)</h1>
+    <p><span>HSL representa a HUE(MATIZ),SATURATION(SATURAÇÃO),LIGHTNESS(BRILHO)</span></p>
     <p><ins><b>hsl</b>(hue,saturation,lightness);</ins>
     </p>
     <pre>
@@ -42,8 +60,8 @@
         lightness em porcentagem, vai de 0%(preto-sem luz-), 50%(meia luz) e 100%(branco-luz total)
     </pre>
     <hr>
-    <h1 id="hsla" style="text-align:center; background-color:hsla(150,40%,45%,0.6)">MESMA COR em HSLA hsla(150,40%,45%,0.6)</h1>
-    <p><strong>HSLA representa a HUE(MATIZ),SATURATION(SATURAÇÃO),LIGHTNESS(BRILHO),ALPHA(OPACIDADE)</strong></p>
+    <h1  id="hsla" style="text-align:center; background-color:hsla(150,40%,45%,0.6)">MESMA COR em HSLA hsla(150,40%,45%,0.6)</h1>
+    <p><span>HSLA representa a HUE(MATIZ),SATURATION(SATURAÇÃO),LIGHTNESS(BRILHO),ALPHA(OPACIDADE)</span></p>
     <p><ins><b>hsla</b>(hue,saturation,lightness,alpha);</ins>
     </p>
     <pre>
