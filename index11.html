@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios-Escolhas-</title>
+</head>
+<body >
+
+ <!--FORMULARIO <SELECT> E <OPTGROUP>/<OPTION>-->    
+    <h1>Formulário de Escolhas</h1>
+    <form action="exemplo.php">
+        <label for="comida">Escolha uma comida:</label>
+            <select name="comida" id="comida" size="">
+
+                <optgroup label="Comidas conhecidas">
+                <option value="bolo">Bolo</option>
+                <option value="pizza">Pizza</option>
+                <option value="sorvete">Sorvete</option>
+                <option value="estrogonofe" disabled>Estrogonofe</option>
+                <option value="peixe">Peixe</option>
+            </optgroup>
+
+                <optgroup label="Comidas exoticas">
+                    <option value="caviar">Caviar</option>
+                    <option value="lula">Lula</option>
+                    <option value="insetos" disabled>Insetos</option>
+                    <option value="vegan">Vegan</option>
+                </optgroup>
+
+            </select>
+            <input type="submit" value="Enviar"><br><br>
+<!--//////////////////////////////////////////////////////////////////////////////////-->
+            <!--FORMULARIO <TEXTAREA>-->
+            <form action="exemplo.php">
+                Justifique a sua escolha: <br>
+                <textarea name="motivo" id="motivo" cols="33" rows="10" placeholder="escreva aqui"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+
+    </form>
+    <button type="button" onclick="alert('Ola')">Clique</button><br><br>
+<!--///////////<////////////////////////////////////////////////////////////////////////-->
+<!--FORMULARIO <FIELDSET> E <LEGEND>-->    
+    <form action="exemple.php" style="width:15%;">
+        <fieldset>
+            <legend>Nome</legend>
+            <label for="fnome">Primeiro Nome:</label><br>
+            <input type="text" name="fnome" id="fnome" placeholder="Seu 1° Nome"><br>
+            <label for="lnome">Sobrenome:</label><br>
+            <input type="text" name="lnome" id="lnome" placeholder="Seu Sobrenome"><br><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+    <br>
+
+    <form action="exemple.php" style="width:15%;">
+        <fieldset>
+            <legend>Responsável</legend>
+            <label for="fnome">Primeiro Nome:</label><br>
+            <input type="text" name="fnome" id="fnome" placeholder="Seu 1° Nome"><br>
+            <label for="lnome">Sobrenome:</label><br>
+            <input type="text" name="lnome" id="lnome" placeholder="Seu Sobrenome"><br><br>
+            <input type="submit" value="Enviar">   
+        </fieldset>
+    </form>
+
+    <br>
+<!--////////////////////////////////////////////////////////////////////////////////////-->
+<!--FORMULARIO <DATALIST> E <OPTION>-->
+    <form action="exemple.php">
+        <label for="navegador">Escolha um Navegador:</label><!--Precisa ter o valor ID do <input> (for="VALOR DO ID")-->
+        <input list="navegadores" id="navegador" name="navegadores">
+
+        <datalist id="navegadores"><!--Precisa ter o valor LIST do <input> (id= "VALOR DO LIST")-->
+            <option value="Opera">
+            <option value="Safari">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Internet Explorer">
+        </datalist>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <br>
+
+    <input type="time" list="horaspopulares">
+    <datalist id="horaspopulares">
+        <option value="12:00">
+        <option value="14:00">
+        <option value="20:00">       
+    </datalist>
+
+    <input type="datetime-local" list="horaspopulares">
+    <datalist id="horaspopulares">
+        <option value="12:00">
+        <option value="14:00">
+        <option value="20:00">       
+    </datalist>
+
+    <input type="date" list="datapopulares">
+    <datalist id="datapopulares">
+        <option value="18/10/1996">
+        <option value="22/12/2012">
+        <option value="26/01/1999">       
+    </datalist><br>
+
+    <br>
+
+    <form action="exemplo.php">
+        <label for="telefone">Insira seu numero de Contato</labe>
+        <input type="tel" id="telefone" name="telefone" placeholder="1234-5678" pattern="[0-9]{4}-[0-9]{4}" required>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
