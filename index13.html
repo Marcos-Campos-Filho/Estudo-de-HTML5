@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Demo</title>
+</head>
+
+<body>
+
+    <h1>Video com atributo autoplay</h1>
+    <h3><small>Reproduz automaticamente(atributo autoplay) e tem que ser mudo(atributo muted)</small></h3>
+    <video width="500" height="290" autoplay muted>
+        <source src="demo-video.mp4" type="video/mp4">
+        <source src="demo-video.ogg" type="video/ogg">
+        <source src="demo-video.webm" type="video/webm">
+    </video>
+    <br>
+
+    <span>
+        Fonte:<a href="https://www.pexels.com/video/the-silhouette-of-the-sea-during-the-golden-hour-6466763/"
+            target="_blank">Free Stock Videos</a>
+    </span>
+
+    <h1>Video com atributo controls </h1>
+    <h3><small>Reproduz e tem opções de PLAY,PAUSE E VOLUME(atributo controls)</small></h3>
+    <video width="500" height="290" controls>
+        <source src="demo-video.mp4" type="video/mp4">
+        <source src="demo-video.ogg" type="video/ogg">
+        <source src="demo-video.webm" type="video/webm">
+    </video>
+    <br>
+
+    <span>
+        Fonte:<a href="https://www.pexels.com/video/the-silhouette-of-the-sea-during-the-golden-hour-6466763/"
+            target="_blank">Free Stock Videos</a>
+    </span>
+
+    <!--Permite interagir com o video sem usar o atributo controls-->
+    <div style="text-align:center">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="500">
+            <source src="demo-video.mp4" type="video/mp4">
+            <source src="demo-video.ogg" type="video/ogg">
+            <source src="demo-video.webm" type="video/webm">
+            Your browser does not support HTML video.
+        </video><br>
+        <caption>Botoes criados usando DOM e JAVASCRIPT</caption>
+    </div>
+
+    <script>
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            if (myVideo.paused)
+                myVideo.play();
+            else
+                myVideo.pause();
+        }
+
+        function makeBig() {
+            myVideo.width = 560;
+        }
+
+        function makeSmall() {
+            myVideo.width = 320;
+        }
+
+        function makeNormal() {
+            myVideo.width = 500;
+        } 
+    </script>
+
+    <span>
+        Fonte:<a href="https://www.pexels.com/video/the-silhouette-of-the-sea-during-the-golden-hour-6466763/"
+            target="_blank">Free Stock Videos</a>
+    </span>
+
+</body>
+
+</html>
