@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Localização</title>
+</head>
+<body>
+    <div>
+    <p>Clique no botão para mostrar a suas Cordenadas</p>
+
+    <button  onclick="getLocation()">Clique</button>
+
+    <p style="border:1px solid black; margin-right:88%;
+     background-color: rgba(50,50,50,0.2) ;" id="res"></p>
+
+    <script>
+        let a = document.getElementById('res')
+
+        function getLocation() {
+            if(navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition)
+            } else {
+                a.innerHTML = "O seu browser não suporta Geolocation."
+            }
+        }
+
+        function showPosition(position) {
+            a.innerHTML = `Latitude: ${position.coords.latitude} 
+            <br> Longitude: ${position.coords.longitude} 
+            <br>Timestamp: ${position.coords.timestamp}`
+        }
+
+        function showError(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED :
+                    a.innerHTML = "Usuário Negou a requisição do Geolocation."
+                    break
+                case error.POSITION_UNAVAILABLE:
+                    a.innerHTML = "Localização informada não está disponível."
+                    break
+                case error.TIMEOUT:
+                    a.innerHTML = "Expirou o periodo de tempo que o usuário requeriu a localização."
+                    break
+                case error.UNKNOWN_ERROR:
+                    a.innerHTML = "Ocorreu um erro desconhecido."            
+            }
+        }
+
+    </script>
+
+</body>
+</html>
