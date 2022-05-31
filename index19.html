@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage API</title>
+</head>
+<body style="font-size:2rem;">
+
+    <span id="res" title="var fname"></span>
+    <span id="res2" title="var lname"></span>
+
+    <script>
+
+        //Checa se o browser suporta essa API
+        if (typeof(Storage) !== "undefined") {
+            ////////////////STORE//////////////////
+            localStorage.setItem("fname","Marcos"); //Que seria a mesma coisa que name = "fname" value = "Marcos"
+            localStorage.setItem("lname","Campos"); //Que seria a mesma coisa que name = "lname" value = "Campos"
+                                                    // Para retirar um item usa se localStorage.removeItem("fname") 
+            //////////////RETRIEVE/////////////////
+            document.getElementById("res").innerHTML = 
+            localStorage.getItem("fname"); 
+            document.getElementById("res2").innerHTML = 
+            localStorage.getItem("lname")
+        } else {
+            document.getElementById("res").innerHTML = 
+            "Seu browser não suporta o Web Storege API."
+        }
+    </script>
+
+</body>
+</html>
